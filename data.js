@@ -1072,16 +1072,7 @@ const DATA = [
     ]
   }
 {
-    "name": "Bà Triệu",
-    "wiki": "Bà_Triệu",
-    "alt": [
-        "triệu thị trinh",
-        "bà triệu",
-        "triệu trinh nương",
-        "triệu ẩu",
-        "triệu cô"
-    ]
-}
+    
     
   
 

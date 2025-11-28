@@ -128,6 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const hint = document.createElement('div');
   hint.style.marginTop = '10px';
   hint.style.color = 'var(--muted)';
-  hint.innerHTML = 'Ví dụ: <em>võ nguyên giáp</em>, <em>hồ chí minh</em>, <em>trần hưng đạo</em>';
+  hint.innerHTML = 'Ví dụ: <em>Võ Nguyên Giáp</em>, <em>Hồ Chí Minh</em>, <em>Trần Hưng Đạo</em>';
   document.querySelector('.wrap').insertBefore(hint, document.querySelector('.results'));
 });

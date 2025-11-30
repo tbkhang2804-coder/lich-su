@@ -1,20 +1,138 @@
+/* ====== BACKGROUND ====== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+    background: url('https://i.imgur.com/6AvxQCF.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f5e6c8;
+}
 
-:root{--bg:#0f172a;--card:#0b1220;--accent:#06b6d4;--muted:#9aa6b2;color-scheme:dark}
-html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
-body{background:linear-gradient(180deg,#071026 0%,#06202a 100%);display:flex;align-items:center;justify-content:center;padding:24px;color:#e6eef6}
-.wrap{width:100%;max-width:900px}
-header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
-h1{font-size:20px;margin:0}
-p.lead{margin:0;color:var(--muted);font-size:13px}
-.searchBox{display:flex;gap:8px;margin-top:14px}
-input[type="search"]{flex:1;padding:14px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.03);color:inherit;font-size:15px;outline:none}
-button{padding:10px 14px;border-radius:10px;border:none;background:var(--accent);color:#042026;font-weight:600;cursor:pointer}
-main.results{margin-top:20px}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;display:flex;gap:14px;align-items:flex-start}
-.avatar{width:140px;height:140px;border-radius:8px;overflow:hidden;flex-shrink:0;background:#07202a;display:flex;align-items:center;justify-content:center}
-.avatar img{width:100%;height:100%;object-fit:cover}
-.meta h2{margin:0 0 6px 0}
-.meta p{margin:0;color:var(--muted)}
-.nores{padding:24px;border-radius:12px;background:rgba(255,255,255,0.02);text-align:center;color:var(--muted)}
-footer{margin-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
-@media(max-width:680px){.card{flex-direction:column;align-items:center}.avatar{width:220px;height:220px}}
+/* Lớp mờ để nhìn rõ nội dung */
+.wrap {
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ===== HEADER ====== */
+h1 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    color: #ffd28a;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+header p {
+    text-align: center;
+    font-size: 16px;
+    color: #e7d6b7;
+    margin-top: 0;
+}
+
+/* ===== SEARCH BOX ===== */
+.searchBox {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    gap: 10px;
+}
+
+#q {
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid #b88a47;
+    border-radius: 10px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.1);
+    color: #ffedc7;
+}
+
+#q::placeholder {
+    color: #d3c0a3;
+}
+
+#btnSearch {
+    padding: 14px 22px;
+    background: #c8964d;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #3b240c;
+    font-weight: bold;
+}
+
+#btnSearch:hover {
+    background: #e3ad63;
+}
+
+/* ===== GỢI Ý ===== */
+.suggestions {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+.suggest-item {
+    padding: 10px 14px;
+    background: rgba(255, 244, 220, 0.85);
+    border-bottom: 1px solid #b88a47;
+    cursor: pointer;
+    font-size: 16px;
+    color: #3b240c;
+}
+
+.suggest-item:hover {
+    background: #ffe5b5;
+}
+
+/* ===== RESULT CARD ===== */
+.card {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 244, 220, 0.9);
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #b2853b;
+    display: flex;
+    gap: 20px;
+    color: #3b240c;
+}
+
+.card h2 {
+    margin: 0;
+    font-family: "Cinzel", serif;
+    font-size: 28px;
+    color: #6b3d0c;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 2px solid #b2853b;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 680px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .avatar {
+        margin: 0 auto;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #ccb896;
+    font-size: 14px;
+}

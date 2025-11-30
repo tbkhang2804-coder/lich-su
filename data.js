@@ -1071,9 +1071,5 @@ const DATA = [
       "bình ngô đại cáo author"
     ]
   }
-{
-  ],
-    
-    
-  
+];
 

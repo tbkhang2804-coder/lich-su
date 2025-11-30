@@ -3,18 +3,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Noto Serif", serif;
-    /* Nền gradient kiểu cổ trang, không dùng ảnh nữa */
-    background: radial-gradient(circle at top, #3b4258 0%, #151821 40%, #050608 100%) fixed;
+
+    /* Tranh rồng vàng đen */
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Vietnamese_dragon_symbol.png')
+                repeat center center fixed !important;
+
+    background-size: 600px !important; /* điều chỉnh độ lớn họa tiết */
     color: #f5e6c8;
-}
 }
 
 /* Lớp mờ để nhìn rõ nội dung */
 .wrap {
-    backdrop-filter: blur(4px);
-    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.55);  
     padding: 20px;
     min-height: 100vh;
+    border-radius: 10px;
 }
 
 /* ===== HEADER ===== */
@@ -23,7 +27,7 @@ h1 {
     font-family: "Cinzel", serif;
     color: #ffdd8a;
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 5px;
 }
 
@@ -40,21 +44,28 @@ header p {
 }
 
 #q {
-    width: 350px;
-    padding: 12px;
+    width: 380px;
+    padding: 13px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid #c8a96c;
+    background: rgba(255, 255, 255, 0.2);
     font-size: 16px;
+    color: #fff;
+}
+
+#q::placeholder {
+    color: #ddd;
 }
 
 #btnSearch {
-    padding: 12px 22px;
+    padding: 13px 24px;
     background: #c89f5c;
-    color: black;
+    color: #000;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    margin-left: 8px;
 }
 
 #btnSearch:hover {
@@ -65,21 +76,45 @@ header p {
 .card {
     display: flex;
     gap: 20px;
-    background: rgba(0,0,0,0.40);
+    background: rgba(0,0,0,0.50);
     padding: 20px;
     border-radius: 12px;
     margin-top: 20px;
+    align-items: flex-start;
 }
 
 .card img {
     width: 240px;
     border-radius: 10px;
+    border: 1px solid #e2c28a;
 }
 
 .card h2 {
     color: #ffdd8a;
+    margin-top: 0;
 }
 
 .card p {
     color: #f5e6c8;
+    line-height: 1.45;
+}
+
+/* ===== SUGGESTIONS ===== */
+.suggestions {
+    max-width: 380px;
+    margin: 0 auto;
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #c8a96c;
+}
+
+.suggest-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #ffdd8a;
+}
+
+.suggest-item:hover {
+    background: rgba(200, 160, 90, 0.25);
 }

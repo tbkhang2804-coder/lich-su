@@ -5,20 +5,17 @@ body {
     font-family: "Noto Serif", serif;
 
     /* Tranh rồng vàng đen */
-    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Vietnamese_dragon_symbol.png') 
-                repeat center center fixed !important;
-
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Vietnamese_dragon_symbol.png') repeat center center fixed !important;
     background-size: 600px !important;
     color: #f5e6c8;
 }
 
-/* ===== Lớp mờ để nội dung rõ hơn ===== */
+/* ===== LỚP CHE (BÁN TRONG SUỐT) ===== */
+/* Quan trọng: Đừng che hết nền → chỉ che nhẹ */
 .wrap {
-    backdrop-filter: blur(4px);
-    background: rgba(0, 0, 0, 0.35);  /* không che nền rồng */
+    background: rgba(0, 0, 0, 0.25);  /* 25% tối, vẫn thấy rồng */
     padding: 20px;
-    min-height: auto;                 /* FIX lỗi che background */
-    border-radius: 10px;
+    min-height: 100vh;
 }
 
 /* ===== HEADER ===== */
@@ -33,88 +30,52 @@ h1 {
 
 header p {
     text-align: center;
+    font-family: "Noto Serif", serif;
     font-size: 14px;
-    color: #e0d5c2;
+    color: #ffdd8a;
 }
 
-/* ===== SEARCH ===== */
+/* ===== SEARCH INPUT ===== */
 .searchBox {
     text-align: center;
-    margin: 20px auto;
+    margin: 25px 0;
 }
 
 #q {
     width: 380px;
-    padding: 13px;
-    border-radius: 8px;
-    border: 1px solid #c8a96c;
-    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 15px;
+    border: 2px solid #ffdd8a;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.5);
+    color: #f5e6c8;
     font-size: 16px;
-    color: #fff;
-}
-
-#q::placeholder {
-    color: #ddd;
 }
 
 #btnSearch {
-    padding: 13px 24px;
-    background: #c89f5c;
-    color: #000;
+    padding: 12px 25px;
+    border-radius: 14px;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    background: #d6a04b;
     font-weight: bold;
-    margin-left: 8px;
-}
-
-#btnSearch:hover {
-    background: #e7c278;
-}
-
-/* ===== RESULT CARD ===== */
-.card {
-    display: flex;
-    gap: 20px;
-    background: rgba(0,0,0,0.45);
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 20px;
-    align-items: flex-start;
-}
-
-.card img {
-    width: 240px;
-    border-radius: 10px;
-    border: 1px solid #e2c28a;
-}
-
-.card h2 {
-    color: #ffdd8a;
-    margin-top: 0;
-}
-
-.card p {
-    color: #f5e6c8;
-    line-height: 1.45;
-}
-
-/* ===== SUGGESTIONS ===== */
-.suggestions {
-    max-width: 380px;
-    margin: 10px auto 0;
-    background: rgba(30, 30, 30, 0.85);
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #c8a96c;
-}
-
-.suggest-item {
-    padding: 10px;
     cursor: pointer;
-    color: #ffdd8a;
 }
 
-.suggest-item:hover {
-    background: rgba(200, 160, 90, 0.25);
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #f5e6c8;
+}
+
+/* ===== KẾT QUẢ ===== */
+.results {
+    margin-top: 40px;
+    color: #f5e6c8;
+}
+
+.results img {
+    max-width: 260px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 20px;
 }

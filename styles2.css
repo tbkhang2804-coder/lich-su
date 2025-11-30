@@ -4,23 +4,24 @@ body {
     padding: 0;
     font-family: "Noto Serif", serif;
 
-    /* Nền rồng vàng */
-    background: url('https://i.imgur.com/2Wn9vGy.jpeg')
+    /* Nền rồng vàng — link 100% dùng được */
+    background: url('https://i.ibb.co/6wJ2JqV/dragon-gold-pattern.jpg')
         repeat center center fixed !important;
-    background-size: 550px !important;
+
+    background-size: 480px !important;
 
     color: #f5e6c8;
 }
 
-/* ===== LỚP CHE NỘI DUNG — KHÔNG CHE HẾT NỀN ===== */
+/* ===== LỚP CHE NỘI DUNG (KHÔNG CHE HẾT NỀN) ===== */
 .wrap {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.28);
     padding: 20px;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 40px auto;   /* cách trên */
     border-radius: 10px;
-    display: inline-block; /* FIX QUAN TRỌNG */
+    display: inline-block;
 }
 
 /* ===== HEADER ===== */

@@ -4,31 +4,30 @@ body {
     padding: 0;
     font-family: "Noto Serif", serif;
 
-    /* NỀN RỒNG VÀNG */
+    /* Nền rồng vàng */
     background: url('https://i.imgur.com/2Wn9vGy.jpeg')
         repeat center center fixed !important;
-
     background-size: 550px !important;
+
     color: #f5e6c8;
 }
 
-/* ===== LỚP CHE NỘI DUNG ===== */
-/* Quan trọng: KHÔNG che hết nền */
+/* ===== LỚP CHE NỘI DUNG — KHÔNG CHE HẾT NỀN ===== */
 .wrap {
-    background: rgba(0, 0, 0, 0.25); 
+    background: rgba(0, 0, 0, 0.25);
     padding: 20px;
-
     width: 100%;
-    max-width: 1000px;  /* giữ bố cục gọn */
-    margin: 0 auto;     /* căn giữa */
+    max-width: 1000px;
+    margin: 0 auto;
     border-radius: 10px;
+    display: inline-block; /* FIX QUAN TRỌNG */
 }
 
 /* ===== HEADER ===== */
 h1 {
     text-align: center;
     font-family: "Cinzel", serif;
-    color: #ffd88a;
+    color: #ffdd8a;
     letter-spacing: 2px;
     font-size: 42px;
     margin-bottom: 5px;
@@ -36,54 +35,53 @@ h1 {
 
 header p {
     text-align: center;
-    color: #ffe8c8;
-    font-style: italic;
-    font-size: 16px;
+    color: #f5e6c8;
+    margin-bottom: 20px;
 }
 
-/* ===== SEARCH BOX ===== */
+/* ===== SEARCH ===== */
 .searchBox {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#q {
-    width: 350px;
-    padding: 12px 15px;
-    border: 2px solid #d4ad5c;
+input[type="search"] {
+    width: 60%;
+    padding: 12px;
+    font-size: 17px;
     border-radius: 8px;
-    font-size: 16px;
+    border: 1px solid #ccc;
     outline: none;
-    background: rgba(255,255,255,0.15);
-    color: #fff;
 }
 
-#q::placeholder {
-    color: #e6d7b8;
-}
-
-#btnSearch {
-    padding: 12px 22px;
-    background: #d4a24f;
+button {
+    padding: 11px 22px;
+    margin-left: 10px;
+    background: #d7a64a;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    color: #000;
+    border-radius: 6px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-#btnSearch:hover {
-    background: #e7b964;
+/* ===== CARD ===== */
+.card {
+    display: flex;
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    align-items: center;
+    gap: 20px;
 }
 
-/* ===== KẾT QUẢ ===== */
-.results {
-    margin-top: 20px;
-    padding: 15px;
+.avatar {
+    width: 200px;
+    height: 260px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
-/* Không cần đổi gì ở card vì file script tạo nội dung */
+.card h2 {
+    color: #ffdd8a;
+}

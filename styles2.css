@@ -1,12 +1,11 @@
-/* ====== BACKGROUND ====== */
+/* ===== BACKGROUND ===== */
 body {
     margin: 0;
     padding: 0;
     font-family: "Noto Serif", serif;
-    background: url('https://i.imgur.com/fVpxxW8.jpeg') no-repeat center center fixed !important;
+    background: url('https://i.imgur.com/FPyxxw8.jpeg') no-repeat center center fixed !important;
     background-size: cover !important;
     color: #f5e6c8;
-}
 }
 
 /* Lớp mờ để nhìn rõ nội dung */
@@ -17,11 +16,11 @@ body {
     min-height: 100vh;
 }
 
-/* ===== HEADER ====== */
+/* ===== HEADER ===== */
 h1 {
     text-align: center;
     font-family: "Cinzel", serif;
-    color: #ffd28a;
+    color: #ffdd8a;
     letter-spacing: 2px;
     font-size: 40px;
     margin-bottom: 5px;
@@ -29,111 +28,57 @@ h1 {
 
 header p {
     text-align: center;
-    font-size: 16px;
-    color: #e7d6b7;
-    margin-top: 0;
+    font-size: 14px;
+    color: #e0d5c2;
 }
 
-/* ===== SEARCH BOX ===== */
+/* ===== SEARCH ===== */
 .searchBox {
-    max-width: 600px;
-    margin: 30px auto;
-    display: flex;
-    gap: 10px;
+    text-align: center;
+    margin: 20px auto;
 }
 
 #q {
-    flex: 1;
-    padding: 14px 16px;
-    border: 2px solid #b88a47;
-    border-radius: 10px;
-    font-size: 18px;
-    background: rgba(255,255,255,0.1);
-    color: #ffedc7;
-}
-
-#q::placeholder {
-    color: #d3c0a3;
+    width: 350px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
 }
 
 #btnSearch {
-    padding: 14px 22px;
-    background: #c8964d;
+    padding: 12px 22px;
+    background: #c89f5c;
+    color: black;
     border: none;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 8px;
     cursor: pointer;
-    color: #3b240c;
     font-weight: bold;
 }
 
 #btnSearch:hover {
-    background: #e3ad63;
-}
-
-/* ===== GỢI Ý ===== */
-.suggestions {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: -20px;
-}
-
-.suggest-item {
-    padding: 10px 14px;
-    background: rgba(255, 244, 220, 0.85);
-    border-bottom: 1px solid #b88a47;
-    cursor: pointer;
-    font-size: 16px;
-    color: #3b240c;
-}
-
-.suggest-item:hover {
-    background: #ffe5b5;
+    background: #e7c278;
 }
 
 /* ===== RESULT CARD ===== */
 .card {
-    max-width: 700px;
-    margin: 40px auto;
-    background: rgba(255, 244, 220, 0.9);
-    padding: 20px;
-    border-radius: 14px;
-    border: 2px solid #b2853b;
     display: flex;
     gap: 20px;
-    color: #3b240c;
+    background: rgba(0,0,0,0.40);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.card img {
+    width: 240px;
+    border-radius: 10px;
 }
 
 .card h2 {
-    margin: 0;
-    font-family: "Cinzel", serif;
-    font-size: 28px;
-    color: #6b3d0c;
+    color: #ffdd8a;
 }
 
-.avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 14px;
-    object-fit: cover;
-    border: 2px solid #b2853b;
-}
-
-/* ===== MOBILE ===== */
-@media (max-width: 680px) {
-    .card {
-        flex-direction: column;
-        text-align: center;
-    }
-    .avatar {
-        margin: 0 auto;
-    }
-}
-
-/* Footer */
-footer {
-    margin-top: 40px;
-    text-align: center;
-    color: #ccb896;
-    font-size: 14px;
+.card p {
+    color: #f5e6c8;
 }

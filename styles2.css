@@ -4,24 +4,23 @@ body {
     padding: 0;
     font-family: "Noto Serif", serif;
 
-    /* Nền rồng vàng — link 100% dùng được */
-    background: url('https://i.ibb.co/6wJ2JqV/dragon-gold-pattern.jpg')
+    /* Nền rồng vàng (đã host cố định, không lỗi) */
+    background: url('https://i.ibb.co/6Nb7T27/dragon-gold-pattern.jpg')
         repeat center center fixed !important;
 
-    background-size: 480px !important;
-
+    background-size: 550px !important;
     color: #f5e6c8;
 }
 
-/* ===== LỚP CHE NỘI DUNG (KHÔNG CHE HẾT NỀN) ===== */
+/* ===== LỚP CHE NỘI DUNG ===== */
 .wrap {
-    background: rgba(0, 0, 0, 0.28);
+    background: rgba(0, 0, 0, 0.25);   /* Làm tối 25% để thấy rồng */
     padding: 20px;
+
     width: 100%;
-    max-width: 1000px;
-    margin: 40px auto;   /* cách trên */
-    border-radius: 10px;
-    display: inline-block;
+    max-width: 1000px;   /* giữ layout gọn đẹp */
+    margin: 0 auto;
+    border-radius: 12px;
 }
 
 /* ===== HEADER ===== */
@@ -31,58 +30,70 @@ h1 {
     color: #ffdd8a;
     letter-spacing: 2px;
     font-size: 42px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 header p {
     text-align: center;
-    color: #f5e6c8;
-    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 25px;
+    color: #f8eacb;
 }
 
-/* ===== SEARCH ===== */
+/* ===== SEARCH BOX ===== */
 .searchBox {
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
 }
 
-input[type="search"] {
-    width: 60%;
-    padding: 12px;
-    font-size: 17px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+#q {
+    width: 340px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #d9aa4b;
     outline: none;
 }
 
-button {
-    padding: 11px 22px;
+#btnSearch {
     margin-left: 10px;
-    background: #d7a64a;
+    padding: 10px 22px;
+    background: #d9aa4b;
+    color: black;
     border: none;
     border-radius: 6px;
-    font-weight: bold;
     cursor: pointer;
+    font-weight: bold;
 }
 
-/* ===== CARD ===== */
-.card {
-    display: flex;
-    background: rgba(0,0,0,0.45);
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 40px;
-    align-items: center;
-    gap: 20px;
+#btnSearch:hover {
+    background: #f2c76a;
 }
 
-.avatar {
-    width: 200px;
-    height: 260px;
+/* ===== KẾT QUẢ ===== */
+.results {
+    margin: 0 auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.45);
     border-radius: 10px;
-    object-fit: cover;
+    color: #fff2c6;
+    max-width: 1000px;
 }
 
-.card h2 {
-    color: #ffdd8a;
+.results img {
+    width: 280px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #ffebc4;
+    font-size: 13px;
+    font-style: italic;
 }

@@ -3,9 +3,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Noto Serif", serif;
-    background: url('https://i.imgur.com/FPyxxw8.jpeg') no-repeat center center fixed !important;
-    background-size: cover !important;
+    /* Nền gradient kiểu cổ trang, không dùng ảnh nữa */
+    background: radial-gradient(circle at top, #3b4258 0%, #151821 40%, #050608 100%) fixed;
     color: #f5e6c8;
+}
 }
 
 /* Lớp mờ để nhìn rõ nội dung */

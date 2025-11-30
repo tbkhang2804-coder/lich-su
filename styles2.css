@@ -4,29 +4,27 @@ body {
     padding: 0;
     font-family: "Noto Serif", serif;
 
-    /* Hình rồng vàng đen */
-    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Vietnamese_dragon_symbol1.png')
-                repeat center center fixed !important;
+    /* NỀN RỒNG VÀNG – ĐEN (Ảnh từ Pinterest CDN) */
+    background: url('https://i.pinimg.com/originals/8b/6c/8a/8b6c8a7c7e51c9c2b0fd04792c81b2a3.jpg')
+        repeat center center fixed !important;
 
-    background-size: 600px !important;
+    background-size: 550px !important; /* Scale đẹp, không quá to */
     color: #f5e6c8;
 }
 
-/* ===== LỚP CHE NHẸ (KHÔNG CHE HẾT MÀN HÌNH) ===== */
+/* ===== LỚP CHE TRONG SUỐT ===== */
+/* Giúp chữ dễ đọc nhưng không che mất nền */
 .wrap {
-    background: rgba(0, 0, 0, 0.25);  /* lớp mờ nhẹ */
-    padding: 20px;
-    width: 100%;
-
-    /* Quan trọng: không che toàn màn hình, chỉ ôm nội dung */
-    display: inline-block;
+    background: rgba(0, 0, 0, 0.25); /* 25% tối -> vẫn thấy nền rồng */
+    padding: 20px 0 40px 0;
+    min-height: 100vh;
 }
 
 /* ===== HEADER ===== */
 h1 {
     text-align: center;
     font-family: "Cinzel", serif;
-    color: #ffd88a;
+    color: #f9d97c;
     letter-spacing: 2px;
     font-size: 42px;
     margin-bottom: 5px;
@@ -34,82 +32,76 @@ h1 {
 
 header p {
     text-align: center;
+    font-family: "Noto Serif", serif;
     color: #f5e6c8;
-    font-style: italic;
-    margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-/* ===== SEARCH BOX ===== */
+/* ===== INPUT + BUTTON ===== */
 .searchBox {
-    text-align: center;
-    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.searchBox input {
-    width: 320px;
-    padding: 10px 14px;
+#q {
+    width: 380px;
+    padding: 12px;
+    font-size: 17px;
     border-radius: 8px;
-    border: 1px solid #ccab7d;
-    outline: none;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid #c8a96a;
+    background: rgba(255, 255, 255, 0.9);
 }
 
-.searchBox button {
-    padding: 10px 18px;
-    margin-left: 8px;
-    background: #d19b47;
-    color: #fff;
+#btnSearch {
+    margin-left: 10px;
+    padding: 12px 25px;
+    background: #d6a34b;
     border: none;
     border-radius: 8px;
+    color: black;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
     transition: 0.2s;
 }
 
-.searchBox button:hover {
-    background: #b58338;
+#btnSearch:hover {
+    background: #f2c66b;
 }
 
-/* ===== RESULTS ===== */
+/* ===== KẾT QUẢ ===== */
 .results {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 12px;
 }
 
-/* Ảnh nhân vật */
-.results img {
-    width: 300px;
-    border-radius: 10px;
+.results h2 {
+    color: #f9d97c;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
-/* Tiêu đề */
-.results h2 {
-    font-family: "Cinzel", serif;
-    color: #ffd88a;
-    margin-top: 0;
+.results img {
+    width: 280px;
+    border-radius: 12px;
+    margin-right: 20px;
+    float: left;
 }
 
-/* Mô tả */
 .results p {
     font-size: 17px;
-    line-height: 1.6;
     color: #f5e6c8;
+    line-height: 1.5;
 }
 
 /* ===== FOOTER ===== */
 footer {
+    margin-top: 70px;
     text-align: center;
-    margin-top: 30px;
     color: #f5e6c8;
-}
-
-footer div {
-    margin-top: 5px;
     font-size: 14px;
 }

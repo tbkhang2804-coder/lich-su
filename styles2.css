@@ -4,27 +4,31 @@ body {
     padding: 0;
     font-family: "Noto Serif", serif;
 
-    /* NỀN RỒNG VÀNG – ĐEN (Ảnh từ Pinterest CDN) */
-    background: url('https://i.pinimg.com/originals/8b/6c/8a/8b6c8a7c7e51c9c2b0fd04792c81b2a3.jpg')
+    /* NỀN RỒNG VÀNG */
+    background: url('https://i.imgur.com/2Wn9vGy.jpeg')
         repeat center center fixed !important;
 
-    background-size: 550px !important; /* Scale đẹp, không quá to */
+    background-size: 550px !important;
     color: #f5e6c8;
 }
 
-/* ===== LỚP CHE TRONG SUỐT ===== */
-/* Giúp chữ dễ đọc nhưng không che mất nền */
+/* ===== LỚP CHE NỘI DUNG ===== */
+/* Quan trọng: KHÔNG che hết nền */
 .wrap {
-    background: rgba(0, 0, 0, 0.25); /* 25% tối -> vẫn thấy nền rồng */
-    padding: 20px 0 40px 0;
-    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.25); 
+    padding: 20px;
+
+    width: 100%;
+    max-width: 1000px;  /* giữ bố cục gọn */
+    margin: 0 auto;     /* căn giữa */
+    border-radius: 10px;
 }
 
 /* ===== HEADER ===== */
 h1 {
     text-align: center;
     font-family: "Cinzel", serif;
-    color: #f9d97c;
+    color: #ffd88a;
     letter-spacing: 2px;
     font-size: 42px;
     margin-bottom: 5px;
@@ -32,76 +36,54 @@ h1 {
 
 header p {
     text-align: center;
-    font-family: "Noto Serif", serif;
-    color: #f5e6c8;
-    font-size: 15px;
+    color: #ffe8c8;
+    font-style: italic;
+    font-size: 16px;
 }
 
-/* ===== INPUT + BUTTON ===== */
+/* ===== SEARCH BOX ===== */
 .searchBox {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 #q {
-    width: 380px;
-    padding: 12px;
-    font-size: 17px;
+    width: 350px;
+    padding: 12px 15px;
+    border: 2px solid #d4ad5c;
     border-radius: 8px;
-    border: 2px solid #c8a96a;
-    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    outline: none;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+#q::placeholder {
+    color: #e6d7b8;
 }
 
 #btnSearch {
-    margin-left: 10px;
-    padding: 12px 25px;
-    background: #d6a34b;
+    padding: 12px 22px;
+    background: #d4a24f;
     border: none;
     border-radius: 8px;
-    color: black;
-    font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
-    transition: 0.2s;
+    color: #000;
+    font-weight: bold;
 }
 
 #btnSearch:hover {
-    background: #f2c66b;
+    background: #e7b964;
 }
 
 /* ===== KẾT QUẢ ===== */
 .results {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 25px;
-    border-radius: 12px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.results h2 {
-    color: #f9d97c;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.results img {
-    width: 280px;
-    border-radius: 12px;
-    margin-right: 20px;
-    float: left;
-}
-
-.results p {
-    font-size: 17px;
-    color: #f5e6c8;
-    line-height: 1.5;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    text-align: center;
-    color: #f5e6c8;
-    font-size: 14px;
-}
+/* Không cần đổi gì ở card vì file script tạo nội dung */

@@ -5,13 +5,11 @@ body {
     font-family: "Noto Serif", serif;
 
     /* Tranh rồng vàng đen */
-    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Vietnamese_dragon_symbol.png')
-                repeat center center fixed !important;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Vietnamese_dragon_symbol.png') repeat center center fixed !important;
+    background-size: 600px !important;
 
-    background-size: 600px !important; /* điều chỉnh độ lớn họa tiết */
     color: #f5e6c8;
 }
-
 /* Lớp mờ để nhìn rõ nội dung */
 .wrap {
     backdrop-filter: blur(5px);

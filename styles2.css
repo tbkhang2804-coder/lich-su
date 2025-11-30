@@ -5,17 +5,19 @@ body {
     font-family: "Noto Serif", serif;
 
     /* Tranh rồng vàng đen */
-    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Vietnamese_dragon_symbol.png') repeat center center fixed !important;
-    background-size: 600px !important;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Vietnamese_dragon_symbol.png') 
+                repeat center center fixed !important;
 
+    background-size: 600px !important;
     color: #f5e6c8;
 }
-/* Lớp mờ để nhìn rõ nội dung */
+
+/* ===== Lớp mờ để nội dung rõ hơn ===== */
 .wrap {
-    backdrop-filter: blur(5px);
-    background: rgba(0, 0, 0, 0.55);  
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.35);  /* không che nền rồng */
     padding: 20px;
-    min-height: 100vh;
+    min-height: auto;                 /* FIX lỗi che background */
     border-radius: 10px;
 }
 
@@ -74,7 +76,7 @@ header p {
 .card {
     display: flex;
     gap: 20px;
-    background: rgba(0,0,0,0.50);
+    background: rgba(0,0,0,0.45);
     padding: 20px;
     border-radius: 12px;
     margin-top: 20px;
@@ -100,7 +102,7 @@ header p {
 /* ===== SUGGESTIONS ===== */
 .suggestions {
     max-width: 380px;
-    margin: 0 auto;
+    margin: 10px auto 0;
     background: rgba(30, 30, 30, 0.85);
     border-radius: 8px;
     overflow: hidden;

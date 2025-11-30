@@ -1070,6 +1070,340 @@ const DATA = [
       "bình ngô đại cáo author",
       "bình ngô đại cáo author"
     ]
-  }
+  },
+{
+  "name": "Triệu Thị Trinh",
+  "wiki": "Triệu_Thị_Trinh",
+  "alt": [
+    "bà triệu",
+    "triệu thị trinh",
+    "triệu trinh nương",
+    "triệu ẩn nương"
+  ]
+},
+,
+{
+  "name": "Âu Cơ",
+  "wiki": "Âu_Cơ",
+  "alt": [
+    "au co",
+    "mẹ au cơ",
+    "mẹ tổ au cơ"
+  ]
+},
+{
+  "name": "Lạc Long Quân",
+  "wiki": "Lạc_Long_Quân",
+  "alt": [
+    "lac long quan",
+    "vua lac long quan"
+  ]
+},
+{
+  "name": "Thánh Gióng",
+  "wiki": "Thánh_Gióng",
+  "alt": [
+    "thanh giong",
+    "phù đổng thiên vương",
+    "phu dong thien vuong"
+  ]
+},
+{
+  "name": "Trưng Trắc",
+  "wiki": "Trưng_Trắc",
+  "alt": [
+    "hai bà trưng",
+    "trung trac",
+    "bà trưng",
+    "ba trung trac"
+  ]
+},
+{
+  "name": "Trưng Nhị",
+  "wiki": "Trưng_Nhị",
+  "alt": [
+    "hai bà trưng",
+    "trung nhi",
+    "bà trưng nhị",
+    "ba trung nhi"
+  ]
+},
+{
+  "name": "Lý Bí",
+  "wiki": "Lý_Bí",
+  "alt": [
+    "ly bi",
+    "lý bôn",
+    "ly bon"
+  ]
+},
+{
+  "name": "Triệu Quang Phục",
+  "wiki": "Triệu_Quang_Phục",
+  "alt": [
+    "trieu quang phuc",
+    "triệu việt vương",
+    "trieu viet vuong"
+  ]
+},
+{
+  "name": "Phùng Hưng (Bố Cái Đại Vương)",
+  "wiki": "Phùng_Hưng",
+  "alt": [
+    "phung hung",
+    "bố cái đại vương",
+    "bo cai dai vuong"
+  ]
+},
+{
+  "name": "Lý Phật Tử",
+  "wiki": "Lý_Phật_Tử",
+  "alt": [
+    "ly phat tu"
+  ]
+},
+{
+  "name": "Khúc Thừa Dụ",
+  "wiki": "Khúc_Thừa_Dụ",
+  "alt": [
+    "khuc thua du"
+  ]
+},
+{
+  "name": "Khúc Hạo",
+  "wiki": "Khúc_Hạo",
+  "alt": [
+    "khuc hao"
+  ]
+},
+{
+  "name": "Khúc Thừa Mỹ",
+  "wiki": "Khúc_Thừa_Mỹ",
+  "alt": [
+    "khuc thua my"
+  ]
+},
+{
+  "name": "Đinh Liễn",
+  "wiki": "Đinh_Liễn",
+  "alt": [
+    "dinh lien",
+    "đinh kín",
+    "dinh kin"
+  ]
+},
+{
+  "name": "Lê Long Đĩnh",
+  "wiki": "Lê_Long_Đĩnh",
+  "alt": [
+    "le long dinh",
+    "lê ngoạ triều",
+    "le ngoa trieu"
+  ]
+},
+{
+  "name": "Lý Thánh Tông",
+  "wiki": "Lý_Thánh_Tông",
+  "alt": [
+    "ly thanh tong",
+    "lý nhật tôn",
+    "ly nhat ton"
+  ]
+},
+{
+  "name": "Lý Nhân Tông",
+  "wiki": "Lý_Nhân_Tông",
+  "alt": [
+    "ly nhan tong",
+    "lý cảnh",
+    "ly canh"
+  ]
+},
+{
+  "name": "Lý Cao Tông",
+  "wiki": "Lý_Cao_Tông",
+  "alt": [
+    "ly cao tong"
+  ]
+},
+{
+  "name": "Lý Anh Tông",
+  "wiki": "Lý_Anh_Tông",
+  "alt": [
+    "ly anh tong"
+  ]
+},
+{
+  "name": "Trần Anh Tông",
+  "wiki": "Trần_Anh_Tông",
+  "alt": [
+    "tran anh tong"
+  ]
+},
+{
+  "name": "Trần Minh Tông",
+  "wiki": "Trần_Minh_Tông",
+  "alt": [
+    "tran minh tong"
+  ]
+},
+{
+  "name": "Trần Dụ Tông",
+  "wiki": "Trần_Dụ_Tông",
+  "alt": [
+    "tran du tong"
+  ]
+},
+{
+  "name": "Hồ Quý Ly",
+  "wiki": "Hồ_Quý_Ly",
+  "alt": [
+    "ho quy ly",
+    "lê quý ly",
+    "le quy ly"
+  ]
+},
+{
+  "name": "Hồ Hán Thương",
+  "wiki": "Hồ_Hán_Thương",
+  "alt": [
+    "ho han thuong"
+  ]
+},
+{
+  "name": "Lê Thánh Tông",
+  "wiki": "Lê_Thánh_Tông",
+  "alt": [
+    "le thanh tong",
+    "hiền vương",
+    "hien vuong"
+  ]
+},
+{
+  "name": "Lê Thái Tông",
+  "wiki": "Lê_Thái_Tông",
+  "alt": [
+    "le thai tong"
+  ]
+},
+{
+  "name": "Lê Nhân Tông",
+  "wiki": "Lê_Nhân_Tông",
+  "alt": [
+    "le nhan tong"
+  ]
+},
+{
+  "name": "Mạc Đăng Dung",
+  "wiki": "Mạc_Đăng_Dung",
+  "alt": [
+    "mac dang dung"
+  ]
+},
+{
+  "name": "Mạc Đăng Doanh",
+  "wiki": "Mạc_Đăng_Doanh",
+  "alt": [
+    "mac dang doanh"
+  ]
+},
+{
+  "name": "Nguyễn Hoàng",
+  "wiki": "Nguyễn_Hoàng",
+  "alt": [
+    "nguyen hoang",
+    "chúa tien nguyen hoang"
+  ]
+},
+{
+  "name": "Nguyễn Nhạc",
+  "wiki": "Nguyễn_Nhạc",
+  "alt": [
+    "nguyen nhac",
+    "tây sơn nguyễn nhạc"
+  ]
+},
+{
+  "name": "Nguyễn Lữ",
+  "wiki": "Nguyễn_Lữ",
+  "alt": [
+    "nguyen lu",
+    "tây sơn nguyễn lữ"
+  ]
+},
+{
+  "name": "Gia Long",
+  "wiki": "Gia_Long",
+  "alt": [
+    "gia long",
+    "vua gia long",
+    "nguyễn ánh",
+    "nguyen anh"
+  ]
+},
+{
+  "name": "Minh Mạng",
+  "wiki": "Minh_Mạng",
+  "alt": [
+    "minh mang",
+    "vua minh mạng"
+  ]
+},
+{
+  "name": "Thiệu Trị",
+  "wiki": "Thiệu_Trị",
+  "alt": [
+    "thieu tri",
+    "vua thiệu trị"
+  ]
+},
+{
+  "name": "Tự Đức",
+  "wiki": "Tự_Đức",
+  "alt": [
+    "tu duc",
+    "vua tự đức"
+  ]
+},
+{
+  "name": "Hàm Nghi",
+  "wiki": "Hàm_Nghi",
+  "alt": [
+    "ham nghi",
+    "vua hàm nghi"
+  ]
+},
+{
+  "name": "Thành Thái",
+  "wiki": "Thành_Thái",
+  "alt": [
+    "thanh thai",
+    "vua thành thái"
+  ]
+},
+{
+  "name": "Duy Tân",
+  "wiki": "Duy_Tân",
+  "alt": [
+    "duy tan",
+    "vua duy tân"
+  ]
+},
+{
+  "name": "Bảo Đại",
+  "wiki": "Bảo_Đại",
+  "alt": [
+    "bao dai",
+    "vua bảo đại"
+  ]
+},
+{
+  "name": "Phan Châu Trinh (trùng tên khác)",
+  "wiki": "Phan_Châu_Trinh",
+  "alt": [
+    "phan chau trinh",
+    "nhà cải cách phan châu trinh"
+  ]
+}
 ];
 
